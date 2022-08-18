@@ -112,18 +112,23 @@ ul .nav-content:hover{
 
 
 /*reward div style section starts*/
+section{
+    margin: 0px;
+   
+}
 .color-box{
     background-color:#1e3932;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 192px;
+    height: 200px;
     color: #fff;
+    text-align: center;
 }
 .color-box .rewards{
     border: 1px solid #fff;
-    margin-right: 20px;
+   
     padding: 7px 18px;
     border-radius: 25px;
 }
@@ -138,4 +143,309 @@ ul .nav-content:hover{
 }
 
 
+
+
 /*reward section ends*/
+
+/*drinks section starts*/
+
+
+.pink-box{
+    background-color:#fa91aa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+   
+}
+.box-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 80%;
+    
+}
+.pink-box .box-content .rewards{
+    border: 1px solid  black;
+    width: fit-content;
+    padding: 7px 18px;
+    border-radius: 25px;
+}
+.pink-box .box-content .rewards a{
+    font-size: 1rem;
+    color:black;
+    font-weight: 500;
+}
+.box-content .box-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 2px;
+   
+
+}
+.pink-box .box-content .box-head h1{
+    font-size: 3rem!important;
+    opacity: 0.7;
+
+}
+.pink-box .box-content .box-para{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    
+}
+.red-box{
+    background-color: #f06464;
+    color: #fff;
+}
+.yellow-box{
+    background-color:#faaa5a;
+}
+.green-box{
+    background-color: #9bf5b4;
+}
+/*drinks section ends*/
+
+
+/*reward disclaimer section starts*/
+
+.reward-info{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reward-info .content-box{
+    max-width: 750px;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.reward-info .content-box #p1 span a{
+ text-decoration: underline;
+ color: black;
+}
+
+/*reward disclaimer section ends*/
+
+/*footer section starts*/
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    box-shadow: 3px 0px 3px 3px rgb(238, 236, 236);
+    position: relative;
+    
+}
+footer .main-footer{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(224, 217, 217);
+   
+}
+footer .main-footer .footer-div{
+    width: 230px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 0px;
+
+}
+.footer-div h3{
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+.footer-div a{
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 30px;
+}
+.footer-div a:hover{
+    color: black;
+}
+footer #sociallinks{
+    width: 300px;
+    margin-left:200px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+} 
+    #sociallinks .hover-div a img
+{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   visibility: visible;
+
+   
+    
+}
+#sociallinks .hover-div  {
+    background-color: rgb(224, 219, 219);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+   
+
+}
+
+#sociallinks .hover-div:hover{
+    
+    visibility: visible;
+}
+
+.footer-nav{
+    display: flex;
+    width: 40%;
+    margin-left: 200px;
+    justify-content: space-between;
+    margin-top:20px;
+
+}
+.footer-nav .nav-links{
+    width: fit-content;
+    padding-right: 35px;
+    border-right: 2px solid gray;
+}
+.footer-nav .nav-links:last-child{
+    border-right: none;
+}
+.footer-nav .nav-links h4{
+    font-weight: 400;
+}
+.footer-nav .nav-links h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.para1{
+    font-size: 14px;
+    font-weight: 500;
+    bottom: 10px;
+    width: 50%;
+    margin-left: 200px;
+    margin-top: 30px;
+    color: gray;
+
+}
+
+/*footer section ends*/
+
+
+@media(max-width:565px) {
+    .container{
+        padding: 0;
+    }
+    
+.row{
+    flex-direction: column-reverse!important;
+    
+    
+}
+.container .reward-row{
+    flex-direction: column-reverse!important;
+}
+
+.pink-box{
+    height: 300px!important;
+   
+}
+.pink-box .box-content .box-head  h1{
+        font-size: 1.6rem!important;
+        margin-bottom: 10px!important;
+    }
+.pink-box .box-content .box-para p{
+    font-size: 1.1rem!important;
+    margin-bottom: 10px!important;
+    line-height:normal!important ;
+    
+}
+.reward-img{
+height: 100px!important;
+}
+.img-box{
+    height: 300px!important;
+}
+.red-row{
+    flex-direction: column!important;
+    
+}
+.footer-nav,.para1,#sociallinks{
+    margin-left: 10px!important;
+    width: 100%;
+
+}
+.footer-nav{
+    flex-direction: column;
+}
+.footer-nav .nav-links{
+    border: none;
+    margin-bottom: 20px;
+}
+}
+@media(max-width:768px) {
+    .container{
+        padding: 0;
+       
+        
+        
+    }
+    .row{
+        flex-direction: column-reverse!important;
+        position: relative;
+        margin: 0!important;
+        width: 100%;
+        
+    }
+    .img-box{
+        max-height: 100%;
+    }
+    .reward-img{
+        height: 200px;
+        }
+   
+    
+    .red-row{
+        flex-direction: column!important;
+        
+}
+.footer-nav,.para1,#sociallinks{
+    margin-left: 10px!important;
+    width: 100%;
+
+}
+
+.footer-nav{
+    flex-direction: column;
+}
+.footer-nav .nav-links{
+    border: none;
+    margin-bottom: 20px;
+}
+}
