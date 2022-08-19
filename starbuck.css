@@ -247,18 +247,21 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 650px;
-    box-shadow: 3px 0px 3px 3px rgb(238, 236, 236);
+    height: auto;
+    box-shadow: 3px 0px 0px 3px rgb(238, 236, 236);
     position: relative;
     
 }
 footer .main-footer{
     margin: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 30px;
-    margin-left: 200px;
-    margin-bottom: 20px;
+    margin:auto;
+    padding: 30px;
+    margin-bottom: 30px;
     border-bottom: 2px solid rgb(224, 217, 217);
    
 }
@@ -286,7 +289,7 @@ footer .main-footer .footer-div{
 }
 footer #sociallinks{
     width: 300px;
-    margin-left:200px;
+    margin:auto;
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -323,9 +326,9 @@ footer #sociallinks{
 
 .footer-nav{
     display: flex;
-    width: 40%;
-    margin-left: 200px;
-    justify-content: space-between;
+    width: 80%;
+    margin:auto;
+    justify-content: space-evenly;
     margin-top:20px;
 
 }
@@ -349,7 +352,7 @@ footer #sociallinks{
     font-weight: 500;
     bottom: 10px;
     width: 50%;
-    margin-left: 200px;
+    margin:auto;
     margin-top: 30px;
     color: gray;
 
@@ -359,10 +362,10 @@ footer #sociallinks{
 
 
 @media(max-width:565px) {
-    .container{
-        padding: 0;
-    }
     
+    .container{
+        margin: auto;
+    }
 .row{
     flex-direction: column-reverse!important;
     
@@ -396,6 +399,9 @@ height: 100px!important;
     flex-direction: column!important;
     
 }
+.footer{
+    box-shadow: 3px 0px 0px 0px rgb(238, 236, 236)!important;
+}
 .footer-nav,.para1,#sociallinks{
     margin-left: 10px!important;
     width: 100%;
@@ -403,13 +409,98 @@ height: 100px!important;
 }
 .footer-nav{
     flex-direction: column;
+    width: 50%;
 }
 .footer-nav .nav-links{
     border: none;
     margin-bottom: 20px;
 }
+.para1{
+    width: 95%!important;
 }
-@media(max-width:768px) {
+.collapse-main-div{
+    width: 100%;
+    height: auto;
+    
+}
+.collapse-main-div .collapse-btn{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+.collapse-main-div .collapse-btn button{
+    right: 20px;
+    position: absolute;
+    border: none;
+    background: none;
+    
+}
+.collapse-main-div .collapse-btn h3{
+    width: 80%;
+}
+.footer-div{
+    width: 230px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 20px;
+}
+.collapse-main{
+    margin-top: 50px;
+   
+}
+.collapse{
+    margin-right: 30px;
+    
+}
+
+#menu{
+    width: 80%;
+    background-color:#fff;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 100px;
+    position: absolute;
+    top:5px;
+    right: 0px;
+}
+#menu .menuitems{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-top: 50px;
+    align-items: center;
+    border-bottom: 2px solid gray;
+   
+}
+#menu .menuitems .navcontent{
+    margin-bottom: 30px;
+}
+#menu .sign-in{
+    position: absolute;
+    top:250px;
+    right: 50px;
+}
+#menu .sign-in .location{
+    margin-bottom: 30px;
+}
+}
+
+
+
+
+
+
+@media(max-width:991px) {
     .container{
         padding: 0;
        
@@ -425,6 +516,7 @@ height: 100px!important;
     }
     .img-box{
         max-height: 100%;
+       
     }
     .reward-img{
         height: 200px;
@@ -435,17 +527,107 @@ height: 100px!important;
         flex-direction: column!important;
         
 }
+.reward-info{
+    width: 100%!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+.reward-info .content-box{
+    width: 90%;
+    padding: 50px!important;
+    margin: 0!important;
+}
 .footer-nav,.para1,#sociallinks{
     margin-left: 10px!important;
     width: 100%;
 
 }
+.para1{
+    width: 95%!important;
+}
 
 .footer-nav{
     flex-direction: column;
+    width: 50%;
 }
 .footer-nav .nav-links{
     border: none;
     margin-bottom: 20px;
+}
+.collapse-main-div{
+    width: 100%;
+}
+.collapse-main-div .collapse-btn{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+.collapse-main-div .collapse-btn button{
+    right: 20px;
+    position: absolute;
+    border: none;
+    background: none;
+    
+}
+.collapse-main-div .collapse-btn h3{
+    width: 80%;
+}
+.footer-div{
+    width: 230px;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 20px;
+}
+.collapse-main{
+    margin-top: 50px;
+   
+}
+.collapse{
+    margin-right: 30px;
+    
+}
+
+#menu{
+    width: 80%;
+    background-color:#fff;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 100px;
+    position: absolute;
+    top:5px;
+    right: 0px;
+}
+#menu .menuitems{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-top: 50px;
+    align-items: center;
+    border-bottom: 2px solid gray;
+   
+}
+#menu .menuitems .navcontent{
+    margin-bottom: 30px;
+}
+#menu .sign-in{
+    position: absolute;
+    top:250px;
+    right: 50px;
+}
+#menu .sign-in .location{
+    margin-bottom: 30px;
+}
+.footer{
+    box-shadow: 3px 0px 0px 0px rgb(238, 236, 236)!important;
 }
 }

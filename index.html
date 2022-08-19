@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="starbuck.css">
+<script src="starbuck.js" type="text/javascript"></script>
 </head>
 <body>
      <!-- header section starts-->
@@ -44,7 +45,37 @@
         
 
        </div>
-           
+
+      
+          <div class="collapse d-lg-none d-xl-none>
+            <button type="button" onclick="Menu()"> <img src="./images/menu.png" alt="" style="width: 35px;height: 35px;"> </button>
+           </div>
+
+          <div id="menu" class="nav-left d-lg-none d-xl-none">
+              <div class="menuitems">
+                <ul>
+                    <li class="navcontent"><a href="#"></a>MENU</li>
+                    <li class="navcontent"<a href="#"></a>REWARDS</li>
+                    <li class="navcontent"><a href="#"></a>GIFT CARDS</li>
+                </ul>
+              </div>
+            
+        
+        <div class="sign-in">
+            <div class="location">
+              <img src="./images/pin.png" alt="" style="width: 22px; height: 22px;">
+              <h5>Find a store</h5>
+            </div>
+     
+            <div class="signin-btns b">
+              <ul>
+                <li class="signin "><a href="#">Sign in</a></li>
+                <li id="join-now" ><a href="#" >Join now</a></li>
+              
+              </ul>
+            </div>
+        </div>
+       </div>
     </header>
     <!-- header section ends-->
 
@@ -187,7 +218,7 @@
 
         <!-- Footer section starts -->
         <footer>
-            <div class="main-footer d-none d-lg-flex">
+            <div class="main-footer d-none d-lg-flex ">
                 <div class="footer-div">
                     <h3>About Us</h3>
                     <a href="#">Our Company</a>
@@ -232,6 +263,76 @@
                 </div>
 
             </div>
+
+
+
+           <!-- footer collapse for mobile and tab screen -->
+
+
+            <div class="collapse-main-div d-lg-none">
+                <div class="collapse-btn">
+                    <h3>About Us  <button type="button" onclick="Aboutus()"> <img src="./images/down.png" alt="" style="width: 25px;height: 25px;"> </button></h3>
+                   
+                </div>
+                <div id="aboutus" class="footer-div">
+                        <a href="#">Our Company</a>
+                        <a href="#">Our Coffee</a>
+                        <a href="#">Stories and News</a>
+                        <a href="#">Starbucks Archive</a>
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Customer Service</a>
+                 </div>
+                 <div class="collapse-btn">
+                    <h3>Carrers  <button type="button" onclick="Carrers()"> <img src="./images/down.png" alt="" style="width: 25px;height: 25px;"> </button></h3>
+                   
+                </div>
+                <div id="carrers" class="footer-div">
+                    <a href="#">Culture and Values</a>
+                    <a href="#">Inclusion Diversity and Equity</a>
+                    <a href="#">College Achievement Plan</a>
+                    <a href="#">Alumni Community</a>
+                    <a href="#">U.S. Careers</a>
+                    <a href="#">International Careers</a>
+                 </div>
+                 <div class="collapse-btn">
+                    <h3>Social Impact <button type="button" onclick="Socialimpact()"> <img src="./images/down.png" alt="" style="width: 25px;height: 25px;"> </button></h3>
+                   
+                </div>
+                <div id="socialimpact" class="footer-div">
+                    <a href="#">People</a>
+                    <a href="#">Planet</a>
+                    <a href="#">Environmental and Social Impact Reporting</a>
+                 </div>
+                 <div class="collapse-btn">
+                    <h3>For Business Partners <button type="button" onclick="Business()"> <img src="./images/down.png" alt="" style="width: 25px;height: 25px;"> </button></h3>
+                   
+                </div>
+                <div id="business" class="footer-div">
+                    <a href="#">Landlord Support Center</a>
+                    <a href="#">Suppliers</a>
+                    <a href="#">Corporate Gift Card Sales</a>
+                    <a href="#">Office and Foodservice Coffee</a>
+                    
+                 </div>
+                 <div class="collapse-btn">
+                    <h3>Order and Pickup <button type="button" onclick="Order()"> <img src="./images/down.png" alt="" style="width: 25px;height: 25px;"> </button></h3>
+                   
+                </div>
+                <div id="order" class="footer-div">
+                    <a href="#">Order on the App</a>
+                    <a href="#">Order on the Web</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Order and Pickup Options</a>
+                    <a href="#">IExplore and Find Coffee for Home</a>
+                 </div>
+
+            </div>
+
+
+
+
+
+            <!-- footer collapse for mobile and tab screen ends -->
 
             <div id="sociallinks">
                 <div class="hover-div">
@@ -282,5 +383,6 @@
    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
 </body>
 </html>
